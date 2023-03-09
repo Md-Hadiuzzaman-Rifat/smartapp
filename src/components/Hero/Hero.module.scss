@@ -1,0 +1,72 @@
+@import "../../style/global.scss";
+
+.lowerText {
+  margin-top: 18rem;
+  @media screen and (max-width: $md) {
+    margin-top: 26rem;
+  }
+}
+.wrapper {
+  position: relative;
+  z-index: 1;
+}
+.email {
+  position: absolute;
+  top: 50%;
+  a {
+    color: orange;
+    text-decoration: none;
+  }
+  @media screen and (max-width: $md) {
+    display: none;
+  }
+}
+
+.person {
+  //   border: 1px solid black;
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-image: url("./assets/splash.png");
+  background-repeat: no-repeat;
+  background-size: 23rem;
+  z-index: -99;
+
+  @media (max-width: $md) {
+    margin-bottom: 100px;
+  }
+
+  img {
+    @media (max-width: $sm) {
+      width: 23rem;
+    }
+    margin-bottom: -5px;
+  }
+}
+// .person {
+//   @media (max-width: $sm), (max-width: $md) {
+//     position: relative;
+//     left: 0;
+//     background-size: 20rem;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     background-position: bottom;
+//   }
+//   position: absolute;
+//   bottom: -2rem;
+//   margin: auto;
+//   background-image: url("../splash.png");
+//   background-repeat: no-repeat;
+//   background-size: 23rem;
+//   left: 33%;
+
+//   img {
+//     @media (max-width: $sm) {
+//       width: 23rem;
+//     }
+//     margin-bottom: -5px;
+//   }
+// }
