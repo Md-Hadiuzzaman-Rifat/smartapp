@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { BiMenuAltRight, BiPhone } from "react-icons/bi";
 import { headerVariants } from "../../utils/motion";
 import classes from "./Header.module.scss";
-
+ 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
@@ -12,9 +12,9 @@ const Header = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${classes.header}`}
+      className={`${classes.header} paddings`}
     >
-      <div className={`${classes.header} flexBetween innerWidth paddings`}>
+      <div className={`${classes.header} flexBetween innerWidth `}>
         <div className={`${classes.header_logo}`}>
           <h1>Smart App</h1>
         </div>

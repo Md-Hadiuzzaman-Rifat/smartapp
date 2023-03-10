@@ -1,11 +1,19 @@
+import { motion } from "framer-motion";
 import React from "react";
+import { staggerContainer } from "../../utils/motion";
 import classes from "./Hero.module.scss";
-
 const Hero = () => {
   return (
-    <div className="innerWidth paddings">
+    <motion.div
+    variants={staggerContainer}
+    initial="hidden"
+    whileInView="show"
+    viewport={{once:false, amount: 0.25}}
+    className="innerWidth paddings">
       <div className={`${classes.wrapper} flexBetWeen`}>
-        <div className="flexBetween">
+        <motion.div
+          
+        className="flexBetween">
           <span className={`primaryText`}>
             Hey There,
             <br />
@@ -15,7 +23,7 @@ const Hero = () => {
             I design beautiful simple <br />
             things, And I love what i do
           </span>
-        </div>
+        </motion.div>
         <div className={classes.email}><a href="mailto:hadirifat100@gmail.com">hadirifat100@gmail.com</a></div>
         <img className={classes.person} src="./assets/person.png" alt="" />
         <div className={`${classes.lowerText} flexBetween`}>
@@ -35,7 +43,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

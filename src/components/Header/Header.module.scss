@@ -2,6 +2,7 @@
 @import "../../style/contains.scss";
 .header {
   font-size: 1.2rem;
+  // position: absolute;
   position: sticky;
   z-index: 999;
   top: 0;
@@ -19,9 +20,10 @@ nav {
       list-style: none;
       gap: 2rem;
       flex-direction: column;
-      right: 2rem;
+      // ....
+      right: 0rem;
       top: 3rem;
-      height: calc(100vh - 5rem);
+      height: calc(100vh - 20rem);
       width: 40%;
       min-width: 15rem;
       background: white;

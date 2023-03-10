@@ -1,0 +1,83 @@
+@import "../../style/global.scss";
+.experties {
+  background-color: white;
+  > div {
+    display: flex;
+    flex-direction: row;
+    gap: "2rem";
+    justify-content: space-between;
+
+    @media screen and (max-width: $md) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .leftSide {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @media screen and (max-width: $md) {
+      width: 100%;
+    }
+
+    .leftSide_property {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      gap: 2rem;
+      border-radius: 20px;
+      transition: all 200ms ease-out;
+      border: 1px solid $secondary-white;
+      padding: 2rem 2rem;
+    }
+    .leftSide_property_projects {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      > p {
+        font-size: 1.25rem;
+      }
+    }
+  }
+  .icons {
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  .rightSide {
+    width: 48%;
+    @media screen and (max-width: $md) {
+      width: 100%;
+      margin-top: 3rem;
+    }
+  }
+  .rightSide {
+    > h1 {
+      font-size: 3rem;
+      margin-bottom: 2.5rem;
+    }
+    > p {
+      font-size: 1.25rem;
+      line-height: 3rem;
+    }
+  }
+  .rightSide_success {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: start;
+    align-items: center;
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.25rem;
+    }
+  }
+}
