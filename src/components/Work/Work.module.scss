@@ -1,0 +1,27 @@
+@import "../../style/contains.scss";
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.worker_details {
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  span {
+    line-height: 2rem;
+    color: $primary;
+  }
+}
+.worker_details_content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  .worker_details_content_left {
+    width: 48%;
+  }
+  .worker_details_content_right {
+    width: 48%;
+  }
+}

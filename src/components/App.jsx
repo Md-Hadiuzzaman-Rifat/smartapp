@@ -1,13 +1,19 @@
 import '../style/global.scss'
-import './App.css'
-import Header from "./Header/Header"
+import Experties from './Experties/Experties'
+// import Header from "./Header/Header"
+import classes from './App.module.scss'
 import Hero from "./Hero/Hero"
-
+import Optional from "./optional/Optional"
+import Work from "./Work/Work"
 function App() {
   return (
-     <div className='bg-primary'>
-        <Header></Header>
+     <div className={`${classes.container} bg-primary`}>
+      <Optional></Optional>
+        {/* <Header></Header> */}
         <Hero></Hero>
+        <Experties></Experties>
+        <Work></Work>
+        {/* <Portfolio></Portfolio> */}
      </div>
   )
 }

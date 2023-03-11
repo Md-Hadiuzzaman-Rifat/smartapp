@@ -12,11 +12,11 @@ const Header = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${classes.header}`}
+      style={{position:"sticky",top:0}}
     >
-      <div className={`${classes.header} flexBetween innerWidth paddings`}>
+      <div className={`${classes.header} xPaddings innerWidth`}>
         <div className={`${classes.header_logo}`}>
-          <h1>Smart App</h1>
+            <h1 style={{marginTop:"4rem"}}>Smart App</h1>
         </div>
         <div className={`${classes.header_navigation}`}>
           <nav>
@@ -50,7 +50,6 @@ const Header = () => {
                 </a>
               </li>
             </ul>
-            
           </nav>
         </div>
       </div>

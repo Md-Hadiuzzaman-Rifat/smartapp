@@ -2,13 +2,20 @@
 @import "../../style/contains.scss";
 .header {
   font-size: 1.2rem;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: sticky;
-  z-index: 999;
+  z-index: 999999;
   top: 0;
+  background-color: #f8f7f1;
   transition: all 300ms ease;
 }
 
 .header_logo {
+  display: flex;
+  align-items: center;
   font-size: 1rem;
 }
 
@@ -19,9 +26,10 @@ nav {
       list-style: none;
       gap: 2rem;
       flex-direction: column;
-      right: 2rem;
+      // ....
+      right: 0rem;
       top: 3rem;
-      height: calc(100vh - 5rem);
+      height: calc(100vh - 20rem);
       width: 40%;
       min-width: 15rem;
       background: white;
@@ -43,6 +51,7 @@ nav {
       list-style-type: none;
       display: inline-block;
       margin: 0 1rem;
+
       a {
         font-size: 1rem;
         font-weight: lighter;
