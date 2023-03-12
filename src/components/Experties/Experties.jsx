@@ -38,7 +38,7 @@ const Experties = () => {
           })}
         </div>
         <motion.div variants={textVariant(0.5)} className={classes.rightSide}>
-          <h1>What do I help?</h1>
+          <h1 style={{marginTop:'0px'}}>What do I help?</h1>
           <p>
             I will help you with finging a solution and solve your problem, We
             use process design to create digital products. Besides that also
