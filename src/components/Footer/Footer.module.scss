@@ -1,0 +1,49 @@
+@import "../../style/contains.scss";
+.footer {
+  background-color: white;
+  .footer_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5rem;
+    @media (max-width: $md) {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: start;
+      gap: 3rem;
+    }
+  }
+  .footer_rightSide {
+    line-height: 1.5rem;
+    p:nth-child(1) {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+    }
+    ul {
+      margin-top: 1rem;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: start;
+      gap: 1.5rem;
+      @media (max-width: $md) {
+        flex-flow: row wrap;
+        justify-content: start;
+      }
+
+      li {
+        list-style-type: none;
+        a {
+          text-decoration: none;
+          color: $primary;
+        }
+      }
+    }
+  }
+  .footer_email {
+    color: orange;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

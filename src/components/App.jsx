@@ -2,6 +2,7 @@ import '../style/global.scss'
 import Experties from './Experties/Experties'
 // import Header from "./Header/Header"
 import classes from './App.module.scss'
+import Footer from "./Footer/Footer"
 import Hero from "./Hero/Hero"
 import Optional from "./optional/Optional"
 import People from "./People/People"
@@ -17,6 +18,7 @@ function App() {
         <Work></Work>
         <Portfolio></Portfolio>
         <People></People>
+        <Footer></Footer>
      </div>
   )
 }
