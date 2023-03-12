@@ -13,7 +13,7 @@ const Optional = () => {
     whileInView="show" className={`${classes.header} bg-primary`}>
       <div className={`${classes.header_content} innerWidth paddings xPaddings`}>
         <div className={classes.header_content_name}>
-          <p>Smart App</p>
+          <p>Omega</p>
         </div>
         <div className={classes.header_content_link}>
             <li>

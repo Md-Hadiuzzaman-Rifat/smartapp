@@ -4,6 +4,8 @@ import Experties from './Experties/Experties'
 import classes from './App.module.scss'
 import Hero from "./Hero/Hero"
 import Optional from "./optional/Optional"
+import People from "./People/People"
+import Portfolio from "./Portfolio/Portfolio"
 import Work from "./Work/Work"
 function App() {
   return (
@@ -13,7 +15,8 @@ function App() {
         <Hero></Hero>
         <Experties></Experties>
         <Work></Work>
-        {/* <Portfolio></Portfolio> */}
+        <Portfolio></Portfolio>
+        <People></People>
      </div>
   )
 }
