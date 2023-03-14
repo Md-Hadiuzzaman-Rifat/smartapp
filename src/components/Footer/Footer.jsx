@@ -10,9 +10,9 @@ const Footer = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${classes.footer} innerWidth paddings`}
+      className={`${classes.footer} `}
     >
-      <motion.div variants={footerVariants} className={classes.footer_content}>
+      <motion.div variants={footerVariants} className={`${classes.footer_content} innerWidth paddings`}>
         <div className={classes.footer_content_leftSide}>
           <h2 className="primaryText">
             Let's make something amazing together.
