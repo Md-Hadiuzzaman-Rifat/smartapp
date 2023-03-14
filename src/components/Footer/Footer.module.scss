@@ -31,7 +31,6 @@
         flex-flow: row wrap;
         justify-content: start;
       }
-
       li {
         list-style-type: none;
         a {
@@ -41,7 +40,7 @@
       }
     }
   }
-  .footer_email {
+  .footer_email > a {
     color: orange;
     text-decoration: underline;
     cursor: pointer;

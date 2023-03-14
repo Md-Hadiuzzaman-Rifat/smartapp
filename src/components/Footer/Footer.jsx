@@ -19,7 +19,7 @@ const Footer = () => {
           </h2>
           <br /> <br />
           <h2 className="primaryText">
-            Start by <span className={classes.footer_email}>saying hi</span>
+            Start by <span className={classes.footer_email}> <a href="mailto:hadirifat100@gmail.com">saying hi</a></span>
           </h2>
         </div>
         <div className={`${classes.footer_rightSide} `}>
