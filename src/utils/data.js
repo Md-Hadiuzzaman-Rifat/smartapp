@@ -1,5 +1,5 @@
-import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { CiMobile1 } from "react-icons/ci";
+import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { MdWorkspacesOutline } from "react-icons/md";
 export const projectExperience = [
   {

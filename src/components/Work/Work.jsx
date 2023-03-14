@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { workExp } from "../../utils/data.js";
-import { staggerChildren, textVariant2 } from "../../utils/motion";
+import { fadeIn, staggerChildren, textVariant2, zoomIn } from "../../utils/motion";
 import classes from "./Work.module.scss";
 
 const Work = () => {
@@ -33,31 +33,32 @@ const Work = () => {
               </motion.div>
             );
           })}
-
-          {/* <motion.div variants={zoomIn(1, 1)} className={classes.progressbar}>
+          
+          {/* progressbar */}
+          <motion.div variants={zoomIn(1, 1)} className={classes.worker_details_progressbar}>
             <motion.div
               variants={fadeIn("down", "tween", 2, 1.5)}
-              className={classes.line}
+              className={classes.progressbar_line}
             ></motion.div>
             <div>
               <div
-                className={classes.circle}
+                className={classes.progressbar_circle}
                 style={{ background: "#286F6C" }}
               ></div>
             </div>
             <div>
               <div
-                className={classes.circle}
+                className={classes.progressbar_circle}
                 style={{ background: "#F2704E" }}
               ></div>
             </div>
             <div>
               <div
-                className={classes.circle}
+                className={classes.progressbar_circle}
                 style={{ background: "#EEC048" }}
               ></div>
             </div>
-          </motion.div> */}
+          </motion.div>
         </div>
       </div>
     </motion.div>

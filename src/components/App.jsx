@@ -12,7 +12,7 @@ function App() {
   return (
      <div className={`${classes.container} bg-primary`}>
       <Optional></Optional>
-        {/* <Header></Header> */}
+        {/* <Header></Header> */} 
         <Hero></Hero>
         <Experties></Experties>
         <Work></Work>

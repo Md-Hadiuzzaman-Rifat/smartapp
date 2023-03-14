@@ -5,7 +5,7 @@ import { headerVariants } from "../../utils/motion";
 import classes from "./Header.module.scss";
 
 const Header = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false); 
   return (
     <motion.div
       variants={headerVariants}
