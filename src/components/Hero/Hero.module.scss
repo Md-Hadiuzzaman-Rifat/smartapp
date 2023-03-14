@@ -1,16 +1,35 @@
 @import "../../style/global.scss";
 
-.lowerText {
-  margin-top: 18rem;
-  @media screen and (max-width: $md) {
-    margin-top: 26rem;
-  }
-}
 .hero {
   position: relative;
+  // overflow: hidden;
   z-index: 1;
+  .hero_upperText {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    @media screen and (max-width: $sm) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+  .hero_lowerText {
+    margin-top: 18rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5;
+    @media screen and (max-width: $sm) {
+      margin-top: 22rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
 }
-.email {
+.hero_email {
   position: absolute;
   top: 50%;
   a {
@@ -21,8 +40,17 @@
     display: none;
   }
 }
+.hero_icon_image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 3rem;
+  }
+}
 
-.person {
+.hero_person {
   position: absolute;
   bottom: -2rem;
   left: 0;
@@ -33,40 +61,11 @@
   background-size: 23rem;
   z-index: -99;
 
-  @media (max-width: $md) {
-    margin-bottom: 100px;
+  @media (max-width: $sm) {
+    margin-bottom: 170px;
   }
-
   img {
-    @media (max-width: $sm) {
-      width: 23rem;
-    }
-    margin-bottom: -5px;
+    margin-bottom: 1rem;
+    width: 2rem;
   }
 }
-
-// .person {
-//   @media (max-width: $sm), (max-width: $md) {
-//     position: relative;
-//     left: 0;
-//     background-size: 20rem;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     background-position: bottom;
-//   }
-//   position: absolute;
-//   bottom: -2rem;
-//   margin: auto;
-//   background-image: url("../splash.png");
-//   background-repeat: no-repeat;
-//   background-size: 23rem;
-//   left: 33%;
-
-//   img {
-//     @media (max-width: $sm) {
-//       width: 23rem;
-//     }
-//     margin-bottom: -5px;
-//   }
-// }

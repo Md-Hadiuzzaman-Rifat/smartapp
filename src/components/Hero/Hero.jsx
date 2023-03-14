@@ -12,7 +12,7 @@ const Hero = () => {
       className="innerWidth paddings"
     >
       <div className={`${classes.hero}`}>
-        <motion.div className="flexBetween">
+        <motion.div className={`${classes.hero_upperText}`}>
           <span className={`primaryText`}>
             Hey There,
             <br />
@@ -23,11 +23,11 @@ const Hero = () => {
             things, And I love what i do
           </span>
         </motion.div>
-        <div className={classes.email}>
+        <div className={classes.hero_email}>
           <a href="mailto:hadirifat100@gmail.com">hadirifat100@gmail.com</a>
         </div>
-        <img className={classes.person} src="./assets/person.png" alt="" />
-        <div className={`${classes.lowerText} flexBetween`}>
+        <img className={classes.hero_person} src="./assets/person.png" alt="" />
+        <div className={`${classes.hero_lowerText}`}>
           <div className="flexCenter" style={{ gap: "1rem" }}>
             <div className="primaryText">10</div>
             <span className="secondaryText" style={{ lineHeight: 1 }}>
@@ -35,12 +35,10 @@ const Hero = () => {
             </span>
           </div>
 
-          <div className="flexCenter">
+          <div className={classes.hero_icon_image}>
             <img src="./assets/certificate.png" alt="" />
-            <span>
-              CERTIFIED PROFATIONAL <br />
-              UI/UX DESIGNER
-            </span>
+            <p>CERTIFIED PROFATIONAL </p>
+              <p>UI/UX DESIGNER</p>
           </div>
         </div>
       </div>

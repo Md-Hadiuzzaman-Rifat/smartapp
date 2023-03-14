@@ -5,7 +5,7 @@ import classes from './App.module.scss'
 import Footer from "./Footer/Footer"
 import Hero from "./Hero/Hero"
 import Optional from "./optional/Optional"
-import People from "./People/People"
+// import People from "./People/People"
 import Portfolio from "./Portfolio/Portfolio"
 import Work from "./Work/Work"
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Experties></Experties>
         <Work></Work>
         <Portfolio></Portfolio>
-        <People></People>
+        {/* <People></People> */}
         <Footer></Footer>
      </div>
   )
