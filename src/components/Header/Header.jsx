@@ -1,38 +1,25 @@
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { BiMenuAltRight, BiPhoneCall } from "react-icons/bi";
+import useHeaderShadow from "../../hooks/useHeaderShadow";
+import useOutsideAlerter from "../../hooks/useOutsideAlerter";
 import { headerVariants } from "../../utils/motion";
 import classes from "./Header.module.scss";
 
 const Header = () => {
-  // let Menubar = (
-  //   <div className={classes.header_menu_link}>
-  //     <li>
-  //       <a href="">services</a>
-  //     </li>
-  //     <li>
-  //       <a href="">experience</a>
-  //     </li>
-  //     <li>
-  //       <a href="">portfolio</a>
-  //     </li>
-  //     <li>
-  //       <a href="">testimonials</a>
-  //     </li>
-  //     <li>
-  //       <a href="">+8801910803372 </a>
-  //       <span>
-  //         <BiPhoneCall size={40} />
-  //       </span>
-  //     </li>
-  //   </div>
-  // );
-
   const [openMenu, setOpenMenu] = useState(false);
+  const menuRef = useRef(null);
+  const headerShadow = useHeaderShadow();
+
+  //to handle click outside of sidebar on mobile
+  useOutsideAlerter({
+    menuRef,
+    setOpenMenu,
+  });
 
   const handleMenubar = () => {
     console.log("hello world");
-    // setOpenMenu((menu) => !menu);
+    setOpenMenu((menu) => !menu);
   };
 
   return (
@@ -41,6 +28,7 @@ const Header = () => {
       initial="hidden"
       whileInView="show"
       className={`${classes.header} bg-primary`}
+      style={{ boxShadow: headerShadow }}
     >
       <div
         className={`${classes.header_content} innerWidth paddings xPaddings`}
@@ -50,16 +38,16 @@ const Header = () => {
         </div>
         <div className={classes.header_content_link}>
           <li>
-            <a href="">service</a>
+            <a href="#services">service</a>
           </li>
           <li>
-            <a href="">experience</a>
+            <a href="#experience">experience</a>
           </li>
           <li>
-            <a href="">portfolio</a>
+            <a href="#portfolio">portfolio</a>
           </li>
           <li>
-            <a href="">testimonials</a>
+            <a href="#testimonials">testimonials</a>
           </li>
           <li>
             <a href="">+8801910803372 </a>
@@ -68,11 +56,36 @@ const Header = () => {
             </span>
           </li>
         </div>
-       
-        <button className={classes.menuControl} onClick={handleMenubar}>
-          <BiMenuAltRight size={30}  />
-        </button>
-        {/* {openMenu && console.log("ami rifat.")} */}
+        <div className={classes.menuControl} onClick={handleMenubar}>
+          <BiMenuAltRight size={30} />
+        </div>
+        {openMenu && (
+          <div>
+            <div
+              className={classes.header_menu_link}
+              ref={menuRef}
+            >
+              <li>
+                <a href="#services">services</a>
+              </li>
+              <li>
+                <a href="#experience">experience</a>
+              </li>
+              <li>
+                <a href="#portfolio">portfolio</a>
+              </li>
+              <li>
+                <a href="#testimonials">testimonials</a>
+              </li>
+              <li>
+                <a href="">+8801910803372 </a>
+                <span>
+                  <BiPhoneCall size={40} />
+                </span>
+              </li>
+            </div>
+          </div>
+        )}
       </div>
     </motion.div>
   );

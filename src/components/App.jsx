@@ -2,21 +2,20 @@ import '../style/global.scss'
 import classes from './App.module.scss'
 import Experties from './Experties/Experties'
 import Footer from "./Footer/Footer"
+import Header from "./header/Header"
 import Hero from "./hero/Hero"
-// import People from "./People/People"
-import Optional from "./optional/Optinal"
+import People from "./People/People"
 import Portfolio from "./Portfolio/Portfolio"
 import Work from "./Work/Work"
 function App() {
   return (
      <div className={`${classes.container} bg-primary`}>
-        {/* <Header></Header>  */}
-        <Optional></Optional>
+        <Header></Header> 
         <Hero></Hero>
         <Experties></Experties>
         <Work></Work>
         <Portfolio></Portfolio>
-        {/* <People></People> */}
+        <People></People>
         <Footer></Footer>
      </div>
   )
