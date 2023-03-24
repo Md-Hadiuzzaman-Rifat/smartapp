@@ -60,6 +60,7 @@ const Hero = () => {
         <img
           className={classes.hero_person_image}
           src="./assets/result.png"
+          style={{backgroundImage:"url('./assets/splash.png')"}}
           alt=""
         />
     </motion.div>
