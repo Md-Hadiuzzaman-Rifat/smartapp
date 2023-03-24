@@ -4,19 +4,19 @@ import { MdWorkspacesOutline } from "react-icons/md";
 export const projectExperience = [
   {
     name: "Website Design",
-    projects: 76,
+    projects: 6,
     icon: HiOutlineDesktopComputer,
     bg: "#286F6C",
   },
   {
     name: "Mobile App Design",
-    projects: 63,
+    projects: 6,
     icon: CiMobile1,
     bg: "#EEC048",
   },
   {
     name: "Brand Identity",
-    projects: 47,
+    projects: 10,
     icon: MdWorkspacesOutline,
     bg: "#F26440",
   },
@@ -30,22 +30,22 @@ export const WhatDoIHelp = [
 export const workExp = [
   {
     place: "Self-Employed, Brisbane",
-    tenure: "Aug 2014 - Sep 2016",
+    tenure: "Aug 2021 - Nov 2021",
     role: "Visual Designer",
     detail:
       "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
   },
   {
     place: "New Man Services",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "UI/UX Designer",
+    tenure: "Nov 2021 - May 2022",
+    role: "React Developer",
     detail:
       "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
   },
   {
     place: "Global Solution",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "Sr. Product Designer",
+    tenure: "Jun 2022 - February 2023",
+    role: "MERN Stack Developer",
     detail:
       "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
   },

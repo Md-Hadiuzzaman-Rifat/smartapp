@@ -25,8 +25,8 @@ const Hero = () => {
               variants={fadeIn("left", "tween", 0.4, 1)}
               className="secondaryText"
             >
-              I design beautiful simple <br />
-              things, And I love what i do
+              I design beautiful website, <br />
+               And I love what i do
             </motion.span>
           </div>
           <div className={classes.hero_email}>
@@ -38,7 +38,7 @@ const Hero = () => {
               className="flexCenter"
               style={{ gap: "1rem" }}
             >
-              <div className="primaryText">10</div>
+              <div className="primaryText">02</div>
               <span className="secondaryText" style={{ lineHeight: 1 }}>
                 Years <br /> Experience
               </span>
@@ -53,7 +53,7 @@ const Hero = () => {
               </div>
 
               <p>CERTIFIED PROFATIONAL </p>
-              <p>UI/UX DESIGNER</p>
+              <p>React Developer</p>
             </motion.div>
           </div>
         </div>

@@ -28,7 +28,7 @@ const Footer = () => {
             <span>145 New York, FL 5467, USA</span>
           </p> */}
           <p>Information</p>
-          <p>145 New York, FL 5467, USA</p>
+          <p>12-Mirpur, Dhaka, Bangladesh</p>
           <ul>
             <li>
               <a href="">Services</a>
