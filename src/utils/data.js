@@ -127,6 +127,7 @@ export const sliderSettings = {
   touchMove: true,
   useCSS: true,
 
+
   responsive: [
     {
       breakpoint: 1024,

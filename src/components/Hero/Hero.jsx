@@ -60,7 +60,7 @@ const Hero = () => {
         </div>
         <img
           className={classes.hero_person_image}
-          src="./assets/person.png"
+          src="./assets/hadi.png"
           alt=""
         />
     </motion.div>
