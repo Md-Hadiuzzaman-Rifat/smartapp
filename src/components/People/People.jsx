@@ -12,6 +12,7 @@ const People = () => {
     initial="hidden"
     whileInView="show"
     viewport={{ once: false, amount: 0.25 }} className={`${classes.people} innerWidth paddings`}>
+      <a id="testimonials" className="anchor"></a>
             <motion.div
       variants={footerVariants}
       className={`yPaddings innerWidth`}>

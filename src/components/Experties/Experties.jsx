@@ -12,7 +12,7 @@ const Experties = () => {
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
     >
-      <a id="experience">
+      <a id="services" className="anchor"></a>
         <div className={classes.experties}>
           <div className="innerWidth paddings yPaddings">
             <div className={classes.leftSide}>
@@ -65,7 +65,6 @@ const Experties = () => {
             </motion.div>
           </div>
         </div>
-      </a>
     </motion.div>
   );
 };

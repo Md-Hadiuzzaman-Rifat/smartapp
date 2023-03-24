@@ -11,7 +11,7 @@ const Portfolio = () => {
       viewport={{ once: false, amount: 0.25 }}
       className={`${classes.portfolio} paddings`}
     >
-      <a id="portfolio">
+      <a id="portfolio" className="anchor"></a>
         <motion.div variants={textVariant(0.4)} className="innerWidth">
           <h1 className="primaryText">My Latest Works</h1>
           <div className={classes.portfolio_text}>
@@ -36,7 +36,7 @@ const Portfolio = () => {
             alt=""
           />
         </div>
-      </a>
+      
     </motion.div>
   );
 };

@@ -4,7 +4,6 @@ import { fadeIn, staggerContainer } from "../../utils/motion";
 import classes from "./Hero.module.scss";
 const Hero = () => {
   return (
-    <div id="services"> 
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -60,11 +59,10 @@ const Hero = () => {
         </div>
         <img
           className={classes.hero_person_image}
-          src="./assets/hadi.png"
+          src="./assets/result.png"
           alt=""
         />
     </motion.div>
-    </div>
   );
 };
 

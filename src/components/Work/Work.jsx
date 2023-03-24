@@ -12,6 +12,7 @@ const Work = () => {
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
     >
+      <a id="experience" className="anchor"></a>
       <div className="innerWidth paddings">
         <h1 className="primaryText">My Work Experience</h1>
         <div className={classes.worker_details}>

@@ -30,6 +30,7 @@ const Header = () => {
       className={`${classes.header} bg-primary`}
       style={{ boxShadow: headerShadow }}
     >
+      <a id="#service" className="anchor"></a>
       <div
         className={`${classes.header_content} innerWidth paddings xPaddings`}
       >
