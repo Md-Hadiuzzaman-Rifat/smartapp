@@ -1,32 +1,81 @@
-<div>
-    ${logo-create}What have I learn from the project:
-    1. firstly I have to install Vite not react.
-    2. I cant use bam rules in where I use scss.
-    3. bam nested not working like,
+## Live Site
 
-    body{
-        font:{
-            size:24px;
-        }
-    }     //*****will work****** where as
+- [Omega Live Demo](https://stately-cocada-fa06b0.netlify.app/)
 
-    .header{
-        logo{
 
-        }
-    }
-    4. I will use module.scss
-    5. css module doesn`t support - only support _ . {`${logo-create}`}. It would be {${logo_create}}
-    6. I have nothing to worry about importing scss file. I will directly import .scss file in Index.js file
-    7. I will not use _file.scss as it create problem importing in index.js file.
-    8. React Icon use bootstrap icon and many other icons . so first you have to look at the whole page.
-    <li> <p><BiPhone size={"40px"}/></p>  </li>
-    9.       svg {
-        color: $secondary;
-        background-color: white;
-        padding: 10px;
-        border-radius: 999px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
-      }
 
-</div>
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+
+# Libraries and Farmwork I used To This Project:
+
+
+
+
+
+
+- React
+- Framer Motion
+- Sass
+- React Slick
+
+
+
+
+## Demo
+
+Insert gif or link to demo
+
+
+## Screenshots
+
+![App Screenshot](https://media.licdn.com/dms/image/D5622AQH4k8MTReWsPg/feedshare-shrink_800/0/1679698073098?e=1689811200&v=beta&t=AMu0IIKUyz_nK3xVA0jsOQNZcm79ui734myYwMuWPTw)
+
+
+
+## Tech I Generally Use:
+
+**Client:** React, Redux, TailwindCSS, Bootstrap, Material UI
+
+**Server:** Node, Express
+
+**Database:** Mongodb, Firebase
+
+**Framwork:** Next.js
+
+
+
+
+## 🔗 Links
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/md-hadiuzzaman-rifat)
+
+[![portfolio](https://img.shields.io/badge/Facebook-000?style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/mdhadiuzzamanrifat)
+
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
+
+
+
+## Feedback
+
+Thank you for visiting my profile. If you have any feedback, please reach out to me through folloing links.
+
+
